@@ -1,0 +1,13 @@
+services:
+  kitCaddyWsc:
+    image: kvalitetsit/kitcaddy:1.3.18
+    volumes:
+      - ./wscCerts:/cert
+      - ./stsCerts/sts.cer:/trust/sts.cer
+      - ./portalapiCerts/certificate.cer:/trust/wsp.cer
+      - ./config:/config
+    command: -config ./config/Caddyfile-wsc.json
+    ports:
+      - "8080:80"
+  mongo:
+    image: mongo:3.6
