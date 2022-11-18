@@ -3,6 +3,8 @@ This setup includes a docker-compose setup for calling Signaturs API.
 
 The proxy (webservice-consumer(wsc)) uses the OIO-IDWS-REST standard for calling the endpoint.
 
+The proxy is based on the KitCaddy project, which can be found [here](https://github.com/KvalitetsIT/kitcaddy/).
+
 ## Prerequisites
 You need:
 
