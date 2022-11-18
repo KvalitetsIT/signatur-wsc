@@ -55,9 +55,9 @@ Follow these steps to run the example. These steps assumes that you cloned this 
 docker-compose up 
 ```
 
-The setup uses a default port *8080*. It can be changed in the compose.yaml file (if port is already in use).
+The setup uses a default port *8080*. It can be changed in the compose.yaml file (if the port is already in use).
 
-When the containers are running you can call the api. This can be done with following curl.
+When the containers are running you can call the api. This can be done with the following curl.
 
 ```
 curl -H "content-type: application/json" -d '{"ClientId":"1524","PeriodFrom":"2022-10-01T00:00:00","PeriodTo":"2022-10-30T23:59:59"}' http://localhost:8080/recruitment/statistics/1
