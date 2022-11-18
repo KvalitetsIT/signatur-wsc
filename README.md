@@ -12,6 +12,8 @@ You need:
 ## Project structure
 
 The git project has the following structure
+
+```
 .
 ├── compose.yaml
 ├── config
@@ -25,6 +27,7 @@ The git project has the following structure
 └── wscCerts
     ├── certificate.cer
     └── key.pem
+```
 
 This table explains how the files are used.
 
