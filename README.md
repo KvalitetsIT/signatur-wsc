@@ -1,9 +1,9 @@
-# signatur-wsc
-This setup uses a docker-compose setup for calling Signaturs API. 
+# Introduction
+This setup includes a docker-compose setup for calling Signaturs API. 
 
 The proxy (webservice-consumer(wsc)) uses the OIO-IDWS-REST standard for calling the endpoint.
 
-## Prerequesites
+## Prerequisites
 You need:
 
  * Docker 20+
@@ -33,7 +33,7 @@ This table explains how the files are used.
 
 | File name | Description |
 |----------------------|---------- |
-| compose.yaml | The compose file starts two containers. A reverse proxy that supports the OIO-IDWS-REST protocol and a mongo for caching |
+| compose.yaml | The compose file starts two containers. A reverse proxy that supports the OIO-IDWS-REST protocol and a mongodb for caching |
 | Caddyfile-wsc.json | The configuration file for the reverse proxy|
 | portalapiCerts/certificate.cer | The public certificate for the api endpoint |
 | sts.cer | The public certificate for STS endpoint |
@@ -49,13 +49,13 @@ You can read more about the OIO-IDWS-REST protocol [here](https://www.digitalise
 
 
 ## Running the example
-Follow these steps to run the example. These steps assumes that you cloned this git repo and have prerequesites in place:
+Follow these steps to run the example. These steps assumes that you cloned this git repo and have prerequisites in place:
 
 ```
 docker-compose up 
 ```
 
-The setup uses a default port the host: 8080. It can be changed in the compose.yaml file (if port is already in use).
+The setup uses a default port *8080*. It can be changed in the compose.yaml file (if port is already in use).
 
 When the containers are running you can call the api. This can be done with following curl.
 
