@@ -32,8 +32,7 @@
                   "client_cert_file": "/cert/certificate.cer",
                   "client_key_file": "/cert/key.pem",
                   "trust_cert_files": [
-                    "/trust/sts.cer",
-                    "/trust/wsp.cer"
+                    "/trust/sts.cer"
                   ],
                   "service_endpoint": "https://portalapi.signatur.dk:443",
                   "service_audience": "teststs"
