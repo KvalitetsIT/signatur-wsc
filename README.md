@@ -70,6 +70,87 @@ Before you can access the production api you will need the following.
 
 * Obtain a public/private key-pair that identifies you as a client. Send the public part (and only the public part to Signatur). Signatur will upload the certificate into the STS.
 
+# Token
+If the user provides a valid certificate known by the STS, a token is issued with the following structure.
+
+The token is provided in the "x-sessiondata" header as base64 encoded String.
+
+´´´
+"definitions": {
+	"ID": {
+		"type": "string"
+	},
+	"Sessionid": {
+		"type": "string"
+	},
+	"Authenticationtoken": {
+		"type": "string"
+	},
+	"Timestamp": {
+		"type": "string"
+	},
+	"Hash": {
+		"type": "string"
+	},
+	"UserAttributes": {
+		"type": "object",
+		"properties": {
+			"dk:nextstepcitizen:attribute:it-system": {
+				"type": "array",
+				"items": {
+					"type": "string"
+				}
+			},
+			"dk:signatur:portalapi:clientid": {
+				"type": "array",
+				"items": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"SessionAttributes": {
+		"type": "object",
+		"properties": { }
+	},
+	"ClientCertHash": {
+		"type": "string"
+	}
+}
+´´´
+
+Example
+
+´´´
+{
+    "ID": "63998f56dc5c9a8630314618",
+    "Sessionid": "3e184afe-5347-46c7-812a-5b75f74cbfb2",
+    "Authenticationtoken": "***TOKEN***",
+    "Timestamp": "2022-12-14T16:54:16.449Z",
+    "Hash": "K7QcveNcIKcvjDApL1fwwQ==",
+    "UserAttributes": {
+        "dk:nextstepcitizen:attribute:it-system": [
+            "na"
+        ],
+        "dk:signatur:portalapi:clientid": [
+            "1524"
+        ]
+    },
+    "SessionAttributes": {},
+    "ClientCertHash": "ef58ce70d110d150a38eecd85e05eb89628c4d18"
+}
+
+´´´
+
+
+
+
+
+
+
+
+
+
 
 
 
