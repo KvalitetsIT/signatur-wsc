@@ -75,7 +75,7 @@ If the user provides a valid certificate known by the STS, a token is issued wit
 
 The token is provided in the "x-sessiondata" header as base64 encoded String.
 
-´´´
+```
 "definitions": {
 	"ID": {
 		"type": "string"
@@ -117,11 +117,11 @@ The token is provided in the "x-sessiondata" header as base64 encoded String.
 		"type": "string"
 	}
 }
-´´´
+```
 
 Example
 
-´´´
+```
 {
     "ID": "63998f56dc5c9a8630314618",
     "Sessionid": "3e184afe-5347-46c7-812a-5b75f74cbfb2",
@@ -140,7 +140,7 @@ Example
     "ClientCertHash": "ef58ce70d110d150a38eecd85e05eb89628c4d18"
 }
 
-´´´
+```
 
 
 
