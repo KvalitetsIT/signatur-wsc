@@ -133,7 +133,7 @@ Example
             "na"
         ],
         "dk:signatur:portalapi:clientid": [
-            "1524"
+            "2474"
         ]
     },
     "SessionAttributes": {},
