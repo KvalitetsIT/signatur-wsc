@@ -21,8 +21,6 @@ The git project has the following structure
 ├── config
 │   └── Caddyfile-wsc.json
 ├── LICENSE
-├── portalapiCerts
-│   └── certificate.cer
 ├── README.md
 ├── stsCerts
 │   └── sts.cer
@@ -37,7 +35,6 @@ This table explains how the files are used.
 |----------------------|---------- |
 | compose.yaml | The compose file starts two containers. A reverse proxy that supports the OIO-IDWS-REST protocol and a mongodb for caching |
 | Caddyfile-wsc.json | The configuration file for the reverse proxy|
-| portalapiCerts/certificate.cer | The public certificate for the api endpoint |
 | sts.cer | The public certificate for STS endpoint |
 | wscCerts/certificate.cer | The public certificate for the client (YOU!). This is just a test certificate |
 | wscCerts/key.pem | The private key for the client (YOU!). This is just a test key. In production, always keep your key safe! |

@@ -4,7 +4,6 @@ services:
     volumes:
       - ./wscCerts:/cert
       - ./stsCerts/sts.cer:/trust/sts.cer
-      - ./portalapiCerts/certificate.cer:/trust/wsp.cer
       - ./config:/config
     command: -config ./config/Caddyfile-wsc.json
     ports:
