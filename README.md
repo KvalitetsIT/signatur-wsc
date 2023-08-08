@@ -44,7 +44,7 @@ The (OIO-IDWS-REST) proxy will first call Signaturs STS (Secure-Token-Service). 
 
 The token will together with the client certificate give access to Signaturs API.
 
-You can read more about the OIO-IDWS-REST protocol [here]([[https://www.digitaliser.dk/resource/5988041](https://digst.dk/it-loesninger/standarder/oio-identity-based-web-services-12-oio-idws/)]).
+You can read more about the OIO-IDWS-REST protocol [here](https://digst.dk/it-loesninger/standarder/oio-identity-based-web-services-12-oio-idws/).
 
 
 ## Running the example
