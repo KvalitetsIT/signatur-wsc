@@ -139,7 +139,8 @@ Example
 
 ```
 
-
+# Example code
+Kombit maintain example code for OIOIDWS WSC [here](https://github.com/kombit/tokenservice_oioidws-net/tree/main).
 
 
 
