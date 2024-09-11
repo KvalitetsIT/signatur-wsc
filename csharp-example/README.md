@@ -35,4 +35,4 @@ securityToken = (GenericXmlSecurityToken)stsTokenService.GetToken();
 2. In line 75, the API request is executed:
 HttpResponseMessage serviceResult = client.SendAsync(request).Result;
 3. In line 94, the response for the API request is displayed:
-Console.WriteLine(serviceResult.Content.ReadAsStringAsync().Result);
+Console.WriteLine(serviceResult.Content.ReadAsStringAsync().Result);X
