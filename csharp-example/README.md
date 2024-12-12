@@ -1,6 +1,5 @@
 Example code C#
-The C# example code can be downloaded at https://github.com/KvalitetsIT/signatur-
-wsc/CSharp.
+The C# example code can be downloaded at https://github.com/KvalitetsIT/signatur-wsc/CSharp.
 Do the following in order to get the C# example up and running:
 1. Download the Kithosting STS certificate: [/csharp-example/stsCerts/sts.cer](https://raw.githubusercontent.com/KvalitetsIT/signatur-wsc/refs/heads/main/csharp-example/stsCerts/sts.cer). The certificate is used together with your own certificate
 to request a token on the STS server.
