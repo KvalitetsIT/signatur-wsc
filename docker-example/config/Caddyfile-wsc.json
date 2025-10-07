@@ -35,7 +35,7 @@
                     "/trust/sts.cer"
                   ],
                   "service_endpoint": "https://portalapi.signatur.dk:443",
-                  "service_audience": "teststs"
+                  "service_audience": "urn:signatur"
                 },
                 {
                   "handler": "reverse_proxy",
